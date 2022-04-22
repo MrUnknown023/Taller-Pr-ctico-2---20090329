@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    background-color: lightseagreen;
+}
+/*Barra de navegación*/
+header{
+    background-color: darkred;
+    padding: 10px;
+    font-size: 1.2em;
+    position: fixed;
+    width: 100%;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.btn{
+    display: none;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+li a{
+    margin: 20px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    width: 25px;
+    text-transform: uppercase;
+}
+li a:hover{
+    background-color: darkorange;
+    border-radius: 5px;
+    transition: .45s;
+    color: white;
+}
+.active{
+    border: 2px solid darkorange;
+    color: darkorange;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 25px;
+}
+
+@media all and (max-width: 980px){
+    li a{
+        padding: 5px;
+    }
+
+    li{
+        margin: 30px 0 0 0;
+    }
+    nav ul{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: #414141;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    .btn{
+        display: inline-flex;
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
+}
+
+/*contenedor de todos los elementos*/
+.contK{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 110px;
+    color: white;
+}
+
+hr{
+    color: white;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+/*Nuestras clases*/
+.title1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contenedorC{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    color: black;
+}
+.cont1{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 5px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 6px 5px 5px #006863;
+}
+
+.imgs{
+    width: 250px;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/*Nuestros Alumnos*/
+.contenedorA{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.contenedorA p{
+    margin-top: 20px;
+}
+table, th, td{
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 5px;
+    background-color: #0F92F4;
+}
+
+/*Galardones*/
+.contenedorG{
+    margin: 20px auto;
+    font-size: 1.2em;
+    display: flex;
+    flex-wrap: wrap;
+}
+ol{
+    margin-left: 50px;
+}
+.tit{
+    margin-right: 40px;
+}
+.ani{
+    list-style-type: lower-alpha;
+    color: gold;
+}
+
+/*footer*/
+footer{
+    display: flex;
+    background-color: darkred;
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: .8em;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
